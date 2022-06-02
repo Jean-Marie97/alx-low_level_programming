@@ -1,12 +1,13 @@
 #include <stdio.h>
 
+/**
+ *main - Prints sized of characters
+ *
+ *Return: Always 0 (success)
+ *
+ */
 int main(void)
- /**
-  *
-  *main - Prints sized of characters
-  *Return: Always 0 (success)
-  *
-  */
+
 {
 
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
