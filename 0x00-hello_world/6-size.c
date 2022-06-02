@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main(void)
- /*
-  *main - This program prints the size of each varaible
-  *return - (0)
+ /**
+  *
+  *main - Prints sized of characters
+  *Return: Always 0 (success)
+  *
   */
 {
 
