@@ -2,7 +2,8 @@
 
 int main(void)
  /*
-  *This program prints the size of each varaible
+  *main - This program prints the size of each varaible
+  *return - (0)
   */
 {
 
