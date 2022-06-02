@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main(void)
-
+ /*
+  *This program prints the size of each varaible
+  */
 {
 
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
