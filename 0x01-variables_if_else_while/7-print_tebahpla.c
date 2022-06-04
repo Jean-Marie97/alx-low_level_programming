@@ -6,26 +6,19 @@
 
 /**
 * main - Entry point
-* Description - Print Alphabet.
+* Description - Print Alphabet in reverse.
 * Return: 0
 */
 
 int main(void)
 
 {
-char a = 'a';
-while (a <= 'z')
+char a = 'z';
+while (a >= 'a')
 {
 putchar(a);
-a++;
+a--;
 }
-
-a = 'A';
-while (a <= 'Z')
-{
-putchar(a);
-a++;
-}							
 putchar('\n');
 return (0);
 }
