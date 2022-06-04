@@ -13,11 +13,10 @@ int main(void)
 {
 
 char x;
-while (x != 'q' && x != 'e')
-{
+
+for (x = 'a'; x <= 'z'; x++)
+if (x != 'q' && x != 'e')
 putchar(x);
-x = x + 1;
-}
 putchar('\n');
 return (0);
 }
