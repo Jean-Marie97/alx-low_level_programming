@@ -15,7 +15,8 @@
 int main(void)
 
 {
-int n = 0;
+int n ;
+chr last[] = "Last digit of";
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 printf("%s %d is %d and is ", last, n, n % 10);
