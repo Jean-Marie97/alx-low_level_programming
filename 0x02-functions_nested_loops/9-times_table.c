@@ -10,31 +10,71 @@
 void times_table(void)
 
 {
-int n, j, mult;
-for (n = 0; n <= 9; n++)
-{
-for (j = 0; j < 10; j++)
-{
-mult = (n * j);
-if (j != 0)
-{
-putchar(',');
-putchar(' ');
-}
-if (mult >= 10)
-{
-putchar((mult / 10) + '0');
-putchar((mult % 10) + '0');
-}
-else if (mult < 10 && j != 10)
-{
-putchar(' ');
-putchar((mult % 10) + '0');
-}
-else
-putchar ((mult % 10) + '0');
-}
-putchar('\n');
-}
+
+	int x = 0; /* factor */
+
+	int y; /* count  */
+
+	int z; /* computed value */
+
+	while (x < 10)
+
+	{
+
+		y = 0;
+
+		while (y < 10)
+
+		{
+
+			z = x * y;
+
+			if (z > 9)
+
+			{
+
+				_putchar(z / 10 + '0');
+
+				_putchar(z % 10 + '0');
+
+			}
+
+			else if (y != 0)
+
+			{
+
+				_putchar(' ');
+
+				_putchar(z + '0');
+
+			}
+
+			else
+
+			{
+
+				_putchar(z + '0');
+
+			}
+
+			if (y != 9)
+
+			{
+
+				_putchar(',');
+
+				_putchar(' ');
+
+			}
+
+			y++;
+
+		}
+
+		_putchar('\n');
+
+		x++;
+
+	}
 
 }
