@@ -1,8 +1,5 @@
-/*
-*File : 2-strlen.c
-*Auth : Gasmi ghassen .
-*/
 #include "main.h"
+
 /*
 *_strlen() - return length of a string .
 */
