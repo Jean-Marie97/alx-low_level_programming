@@ -3,22 +3,17 @@
 
 /**
 *_strcpy - copies the string pointed to by src to the buffer pointed to by dest
-* @*dest : pointer of type array of string
-* @*src : pointer of type array of string
+* @dest : pointer of type array of string
+* @src : pointer of type array of string
 *Return: string pointed by *dest
 */
 char *_strcpy(char *dest, char *src)
 {
 int i;
-while (*(src + i))
+for (i = 0; src[i] != '\0'; i++)
 {
-*(dest + i) = *(src + i);
-i++;
+dest[i] = src[i];
 }
-while (*(dest + i))
-{
-printf("%d", dest[i]);
-i++;
-}
+dest[i++] = '\0';
 return (dest);
 }

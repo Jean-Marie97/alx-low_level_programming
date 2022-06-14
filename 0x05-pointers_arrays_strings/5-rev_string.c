@@ -2,23 +2,29 @@
 
 /**
 *rev_string - reverse the elements of an array.
-*@*s: pointer of type array of string
+*@s: pointer of type array of string
 Return: void
 */
 void rev_string(char *s)
+
 {
-int i = 0, j = 0;
-char tmp[20];
-while (*(s + i))
+
+int i, c, k;
+char *a, aux;
+a = s;
+while (s[c] != '\0')
 {
-*(tmp + i) = *(s + i);
-i++;
+c++;
 }
-i = i - 1;
-while (i >= 0)
+for (k = 1; k < c; k++)
 {
-*(s + i) = *(tmp + j);
-j++;
-i--;
+a++;
+}
+for (i = 0; i < (c / 2); i++)
+{
+aux = s[i];
+s[i] = *a;
+*a = aux;
+a--;
 }
 }
